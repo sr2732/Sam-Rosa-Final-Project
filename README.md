@@ -1,22 +1,32 @@
 # Move with Sam Rosa
 
-Move with Sam Rosa is a Pilates website with a Google Calendar availability browser, a Booking Concierge Agent, Gmail booking-review notifications, approval/rejection workflow, and testimonial submission.
+Move with Sam Rosa is a Pilates website with a Google Calendar availability browser, a Booking Concierge Agent, Gmail booking-review notifications, approval/rejection workflow, and testimonial submission. It demonstrates how an independent instructor can build an integrated booking and testimonial portal without a separate booking-platform subscription.
+
+Live app: https://sam-rosa-final-project.onrender.com
+
+Project artifacts:
+
+- `report.html` — final project report
+- `slides.html` — Reveal.js presentation
+- `agent/` — Booking Concierge Agent and safety tests
 
 ## Run locally
 
 1. Install Node.js 18+.
-2. Create `.env` one level above this repository or in this folder. The app checks both locations.
-3. Add Google OAuth values from Google Cloud and the course `PORTKEY_API_KEY`.
-4. Run `npm install`.
-5. Run `npm run build`.
-6. Run `npm start`.
-7. Open `http://localhost:3001`.
+2. Clone this repository and enter its directory.
+3. Copy `.env.example` to `.env`.
+4. Add your own Google OAuth values and Portkey key to `.env`; never commit that file.
+5. Run `npm install`.
+6. Run `npm run build`.
+7. Run `npm start`.
+8. Open `http://localhost:3001`.
+9. For local Google Calendar/Gmail access, open `http://localhost:3001/auth/google` once and complete authorization.
 
 ## Required environment
 
 See `.env.example`. Required values are `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REDIRECT_URI`, `GOOGLE_CALENDAR_ID`, `PILATES_EMAIL`, and `PORTKEY_API_KEY`.
 
-The first Google authorization is completed at `http://localhost:3001/auth/google`. The calendar account must authorize Calendar read access and Gmail send access. The client-facing app reads Google free/busy data; it does not invent availability.
+The calendar account must authorize Calendar read access and Gmail send access. The client-facing app reads Google free/busy data; it does not invent availability. For the public deployment, set `GOOGLE_REDIRECT_URI` to `https://sam-rosa-final-project.onrender.com/auth/google/callback` in the host environment and register that exact URI with Google.
 
 ## Agent
 
@@ -24,4 +34,4 @@ The first Google authorization is completed at `http://localhost:3001/auth/googl
 
 ## Important production notes
 
-The approval links must use the deployed HTTPS URL, not localhost. Local JSON storage is for the class demonstration; production should use a database. Before submission, run the fresh-clone dry run, capture screenshots, verify the public URL, and check that no `.env`, OAuth token, or local data file is committed.
+Approval links use the deployed HTTPS URL in production. The demonstration uses JSON persistence; a production version should use managed storage. Do not commit `.env`, OAuth tokens, booking data, testimonial data, or API keys.
