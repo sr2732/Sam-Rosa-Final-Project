@@ -1,6 +1,10 @@
 .env
+.env.*
+!.env.example
 .google-token.json
 .testimonials.json
 .booking-requests.json
+.DS_Store
 node_modules/
 dist/
+_AI/agent-booking.js
