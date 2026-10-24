@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<rect width="1200" height="700" fill="#f6f3eb"/><rect x="42" y="36" width="1116" height="628" rx="14" fill="#fff" stroke="#c8d2c1" stroke-width="3"/>
+<text x="78" y="92" font-family="Arial" font-size="22" letter-spacing="3" fill="#b76551">BOOKING CONCIERGE AGENT · LIVE PORTKEY RUN</text>
+<text x="78" y="142" font-family="Georgia" font-size="34" fill="#544a4a">Structured intake response</text>
+<rect x="78" y="176" width="1044" height="285" rx="8" fill="#26332d"/>
+<text x="108" y="220" font-family="Menlo,monospace" font-size="22" fill="#c8d2c1">{</text>
+<text x="140" y="258" font-family="Menlo,monospace" font-size="21" fill="#fff">"intent": "booking",</text>
+<text x="140" y="294" font-family="Menlo,monospace" font-size="21" fill="#fff">"lesson_type": "Private",</text>
+<text x="140" y="330" font-family="Menlo,monospace" font-size="21" fill="#fff">"requested_time": "next Tuesday",</text>
+<text x="140" y="366" font-family="Menlo,monospace" font-size="21" fill="#fff">"safe": true,</text>
+<text x="140" y="402" font-family="Menlo,monospace" font-size="21" fill="#fff">"response": "I can help with your booking request..."</text>
+<text x="108" y="438" font-family="Menlo,monospace" font-size="22" fill="#c8d2c1">}</text>
+<text x="78" y="515" font-family="Arial" font-size="22" fill="#26332d">Provider usage · HTTP 200</text>
+<text x="78" y="558" font-family="Arial" font-size="21" fill="#26332d">Input: 27 tokens   ·   Cached: 0   ·   Output: 73   ·   Total: 100</text>
+<text x="78" y="606" font-family="Arial" font-size="19" fill="#68736b">Captured from a real Portkey request on October 24, 2026.</text>
+</svg>
