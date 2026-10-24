@@ -1,0 +1,6 @@
+.env
+.google-token.json
+.testimonials.json
+.booking-requests.json
+node_modules/
+dist/
